@@ -278,5 +278,11 @@ linter:
     package_names: true
     sort_pub_dependencies: false
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+bloc:
+  rules:
+    avoid_build_context_extensions: true
+    avoid_flutter_imports: true
+    avoid_public_bloc_methods: true
+    avoid_public_fields: true
+    prefer_file_naming_conventions: true
+    prefer_void_public_cubit_methods: true
