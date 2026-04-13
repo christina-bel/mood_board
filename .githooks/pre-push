@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Launch fvm flutter analyze..."
+
+fvm flutter analyze
+ANALYZE_STATUS=$?
+
+if [ $ANALYZE_STATUS -ne 0 ]; then
+  echo "❌ Analysis completes with errors. Push is aborted."
+  exit 1
+fi
+
+echo "✅ Analysis is successful. We continue to push..."
+exit 0
+
