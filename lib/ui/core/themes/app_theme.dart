@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'app_colors.dart';
+import 'package:mood_board/ui/core/themes/app_colors.dart';
 
 class AppTheme {
   static ThemeData dark() => ThemeData(

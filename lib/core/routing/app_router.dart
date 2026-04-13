@@ -1,6 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-
-import 'app_router.gr.dart';
+import 'package:mood_board/core/routing/app_router.gr.dart';
 
 @AutoRouterConfig()
 class AppRouter extends RootStackRouter {
