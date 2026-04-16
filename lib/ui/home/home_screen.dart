@@ -1,5 +1,7 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:mood_board/core/translations/locale_keys.g.dart';
 
 @RoutePage()
 class HomeScreen extends StatelessWidget {
@@ -7,8 +9,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('MoodBoard AI')),
+    return Scaffold(
+      body: Center(
+        child: Text(
+          LocaleKeys.appTitle.tr(),
+        ),
+      ),
     );
   }
 }
